@@ -1,0 +1,18 @@
+### Highlight search matches
+
+To enable search match highlighting:
+`:set hlsearch` or `:hls`
+
+To disable search match highlighting:
+`:nohlsearch` or 
+`:nohls` or 
+`:set hohlsearch` to completely turn it off during session
+
+### To search and replace some strings use following:
+1. `:%s/==.*/ `
+  - `%s` searches for the string in all lines, not only in the current line.
+  - `/` performs forward search. `?` should perform a backward search.
+  - `==.*` is the search pattern where any string with any number of characters preceded by "==" will be matched.
+  - `/ ` (notice there is a space char) specifies that match be replaced by " "(a space).
+
+2. `:%s/==.*//d`
