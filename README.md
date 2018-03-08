@@ -3,3 +3,4 @@ Should contain petty notes on problems I face in day-to-day programming. It's ki
 
 
 1. [Excel tips and tricks](/excel_tips_tricks/)
+2. [Create hex stickers using R](/r_hex_sticker.R)
