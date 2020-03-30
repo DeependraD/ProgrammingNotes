@@ -1,0 +1,84 @@
+---
+title: "F value table"
+author: "Deependra Dhakal"
+date: "9/10/2019"
+geometry: "left=0.5cm,right=0.5cm,top=0.5cm,bottom=0.5cm"
+output: 
+  bookdown::pdf_document2:
+    # toc: yes
+    # toc_depth: 3
+    keep_tex: yes
+header-includes:
+- \usepackage{booktabs}
+- \usepackage{longtable}
+- \usepackage{array}
+- \usepackage{multirow}
+- \usepackage[table]{xcolor}
+- \usepackage{wrapfig}
+- \usepackage{float}
+- \usepackage{colortbl}
+- \usepackage{pdflscape}
+- \usepackage{tabu}
+- \usepackage{threeparttable}
+- \usepackage[normalem]{ulem}
+- \usepackage{rotating}
+- \newcommand{\blandscape}{\begin{landscape}}
+- \newcommand{\elandscape}{\end{landscape}}
+- \usepackage{subfig}
+- \usepackage[format=hang,labelfont=bf,margin=0.5cm,justification=centering]{caption}
+- \setlength{\tabcolsep}{1.5pt}
+- \renewcommand{\arraystretch}{1.2}
+---
+
+\clearpage
+
+```{r setup, include=FALSE}
+
+# import libraries
+require(tidyverse)
+library(tidyverse)
+knitr::opts_chunk$set(tidy = TRUE, cache = FALSE, 
+                      echo = FALSE, 
+                      tidy.opts = list(width.cutoff=50), 
+                      eval = TRUE, warning = FALSE, message = FALSE,
+                      # fig.show = "hold", 
+                      fig.align = "center", fig.width = 5,
+                      fig.asp = 0.9, out.width = "0.7\\linewidth")
+options(knitr.kable.NA = "", digits = 3, 
+        kableExtra.latex.load_packages = FALSE)
+```
+
+\blandscape
+
+```{r f-statistic, message=FALSE, warning=FALSE, results='asis'}
+# trial
+# x = seq(0, 5, length = 100)
+# curve(df(x = x, df1 = 1, df2 = 1), from = 0, to = 100)
+# 
+# qf(p = 0.05, df1 = 3, df2 = 4)
+
+p_vals <- c(seq(from = 95, to = 5, by = -5)/100, 0.04, 0.03, 0.02, 0.01, 0.005, 0.001)
+degf1 <- c(1:30, seq(from = 35, to = 100, by=5))
+degf2 <- c(1:30, seq(from = 35, to = 100, by=5))
+
+f_values <- map_dfr(degf2, function(z){
+  map_dfc(degf1,
+          .f = function(y){
+            round(qf(p = p_vals, df1 = y, df2 = z), 3)
+          }) %>% 
+    magrittr::set_colnames(value = seq_len(ncol(.))) %>% 
+    add_column(.before = 1, pvalue = paste0("Pvalue ", seq_len(nrow(.)), sep = ""))
+  }, .id = "df")
+
+f_values <- f_values %>% 
+  group_split(pvalue) %>% 
+  map(~.x %>% select(-pvalue))
+
+walk(f_values[1:2], 
+     ~.x %>% 
+       knitr::kable(format = "latex", booktabs = TRUE, longtable = FALSE) %>% 
+       kableExtra::kable_styling(font_size = 5, latex_options = "striped") %>% 
+       print())
+```
+
+\elandscape
