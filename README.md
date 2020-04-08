@@ -22,9 +22,12 @@ Right after installation, install:
 
 - git (`sudo apt-get install git`)
 - vim (`sudo apt-get install vim`)
+- tmux (`sudo apt-get install tmux`)
 - zsh (`sudo apt-get install zsh`)
   - Configure z-shell with [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh/) configuration.
-- Use dotfiles for configuration (https://github.com/deependrad/ProgrammingNotes/dotfiles/)
+- Configure dotfiles (https://github.com/deependrad/ProgrammingNotes/dotfiles/)
+  - clone and paste the dotfiles directory of this repo to home
+  - run `make.sh` file. It backs up existing dotfiles and copies the links for new dotfiles to home directory. Before running the `make.sh` change the permission to grant it execution rights (`chmod +x .make.sh`).
 - R (add PPA)
 - Rstudio (debain package available at website)
 - R packages (lmer, tidyverse, bookdown, blogdown)
