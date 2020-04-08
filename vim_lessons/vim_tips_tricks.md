@@ -16,3 +16,8 @@ To disable search match highlighting:
   - `/ ` (notice there is a space char) specifies that match be replaced by " "(a space).
 
 2. `:%s/==.*//d`
+
+### To resize the current windows size
+
+  - CTRL+W+-    ; This will decrease the window size
+  - CTRL+SHIFT++    ; This will increase the window size
