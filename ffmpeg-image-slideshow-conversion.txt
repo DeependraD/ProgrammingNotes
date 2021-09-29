@@ -1,0 +1,20 @@
+# if -safe = 1, reject unsafe file paths and directives
+# if -safe = 0, any file name is accepted
+# -r = 1/2, force the frame rate of the input file (valid for raw formats only) to 1/2 fps  
+# generally fps=25, lower the fps better will tend to be the input image quality preservation
+# -f concat, demuxer reads a list of files and other directives from a text file and demuxes them one after the other, as if all their packets had been muxed together.
+
+# general quick conversion
+ffmpeg -r 1/2 -f concat -safe 0 -i ffmpeg-image-slideshow-file-list.txt -c:v libx264 -vf "fps=10,format=yuv420p" trial_video.mp4
+
+# not run!
+# to only copy the input stream (does not allow filtering)
+# note: this does not produce output frames of desired length (video concludes in 1 second!)
+ffmpeg -r 1/2 -f concat -safe 0 -i ffmpeg-image-slideshow-file-list.txt -c:v copy trial_video.mp4
+
+# this uses default encoder and produces desired framerate using default encoder (libx264)
+ffmpeg -r 1/2 -f concat -safe 0 -i ffmpeg-image-slideshow-file-list.txt -vf "fps=10" trial_video.mp4
+
+# image slideshow with crossfading and zoompan
+# "A"(1.5) is the duration in seconds how long each picture is shown (without the crossfade duration), and "B"(1) is the crossfade duration in seconds.
+ffmpeg -f concat -safe 0 -i ffmpeg-image-slideshow-file-list.txt -vf zoompan=d=(1.5+1)/1:fps=1/1,framerate=25:interp_start=0:interp_end=255:scene=100 -c:v libx264 -maxrate 5M -q:v 2 trial_run_video.mp4
