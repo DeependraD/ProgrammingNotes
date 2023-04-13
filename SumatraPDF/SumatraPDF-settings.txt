@@ -1,0 +1,25 @@
+MainWindowBackground = #648972
+
+FixedPageUI [
+    TextColor = #000000
+    BackgroundColor = #ffffff
+    SelectionColor = #f5fc0c
+    WindowMargin = 2 4 2 4
+    PageSpacing = 4 4
+    GradientColors = #4f4140
+]
+
+EbookUI [
+    FontName = Georgia
+    FontSize = 12.5
+    TextColor = #5f4b32
+    BackgroundColor = #fbf0d9
+    UseFixedPageUI = false
+]
+
+DefaultZoom = fit width
+WindowState = 1
+WindowPos = 0 0 1200 1080
+ShowToc = true
+SidebarDx = 120
+TocDy = 1
