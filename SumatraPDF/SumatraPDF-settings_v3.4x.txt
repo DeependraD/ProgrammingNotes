@@ -1,0 +1,444 @@
+﻿# For documentation, see https://www.sumatrapdfreader.org/settings/settings3-4-6.html
+FixedPageUI [
+	TextColor = #000000
+	BackgroundColor = #eeeeee
+	SelectionColor = #f5fc0c
+	WindowMargin = 2 4 2 4
+	PageSpacing = 4 4
+	HideScrollbars = false
+]
+ComicBookUI [
+	WindowMargin = 0 0 0 0
+	PageSpacing = 4 4
+	CbxMangaMode = false
+]
+ChmUI [
+	UseFixedPageUI = false
+]
+
+SelectionHandlers [
+]
+ExternalViewers [
+]
+
+ZoomLevels = 8.33 12.5 18 25 33.33 50 66.67 75 100 125 150 200 300 400 600 800 1000 1200 1600 2000 2400 3200 4800 6400
+ZoomIncrement = 0
+
+PrinterDefaults [
+	PrintScale = shrink
+]
+ForwardSearch [
+	HighlightOffset = 0
+	HighlightWidth = 15
+	HighlightColor = #6581ff
+	HighlightPermanent = false
+]
+Annotations [
+	HighlightColor = #ffff00
+	UnderlineColor = #00ff00
+	TextIconColor = #ffff00
+	TextIconType = 
+	DefaultAuthor = 
+]
+
+RememberOpenedFiles = true
+RememberStatePerDocument = true
+RestoreSession = true
+UiLanguage = en
+EnableTeXEnhancements = true
+DefaultDisplayMode = automatic
+DefaultZoom = fit page
+Shortcuts [
+]
+EscToExit = false
+ReuseInstance = false
+ReloadModifiedDocuments = true
+
+MainWindowBackground = #aaaaaa
+FullPathInTitle = false
+ShowMenubar = true
+ShowToolbar = false
+ShowFavorites = false
+ShowToc = false
+TocDy = 0
+SidebarDx = 159
+ToolbarSize = 18
+TabWidth = 300
+TreeFontSize = 0
+SmoothScroll = false
+ShowStartPage = true
+CheckForUpdates = true
+WindowState = 2
+WindowPos = 952 0 976 1038
+UseTabs = false
+UseSysColors = false
+CustomScreenDPI = 0
+
+FileStates [
+	[
+		FilePath = C:\Users\Asus\Downloads\wallstreetjournal_20230408_TheWallStreetJournal.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 952 0 976 1038
+		ShowToc = false
+		SidebarDx = 159
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\Asus\Downloads\wallstreetjournal_20230410_TheWallStreetJournal.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 1277.7
+		PageNo = 16
+		Zoom = 100
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 952 0 976 1038
+		ShowToc = false
+		SidebarDx = 159
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\Asus\Downloads\REMMA\REMMA\User Manual.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 2
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 309.135
+		PageNo = 2
+		Zoom = 66.67
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 952 0 976 1038
+		ShowToc = false
+		SidebarDx = 159
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\latex_quick_templates\venn_diagram_set_symbology.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 14
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 65.2008
+		PageNo = 1
+		Zoom = 75
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -14 17 976 1030
+		ShowToc = false
+		SidebarDx = 159
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\Asus\Downloads\Shizhong Xu - Quantitative Genetics-Springer (2022).pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 7
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 288.824
+		PageNo = 5
+		Zoom = fit width
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 952 0 976 1038
+		ShowToc = false
+		SidebarDx = 159
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\Asus\Desktop\to_read\A Migrating Butterfly, a Poisonous Plant, and Their Remarkable Story of Coevolution.epub
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 4
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 632.8
+		PageNo = 22
+		Zoom = 150
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 952 0 976 1030
+		ShowToc = false
+		SidebarDx = 159
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\Asus\Desktop\to_read\An Introduction to Statistical Genetic Data Analysis-MIT Press (2020).pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 952 0 976 1030
+		ShowToc = false
+		SidebarDx = 159
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\Asus\Downloads\Debasish Kar, Sagartirtha Sarkar - Genetics Fundamentals Notes-Springer (2022).pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 7
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 70.2004
+		PageNo = 16
+		Zoom = 150
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 952 0 976 1030
+		ShowToc = true
+		SidebarDx = 159
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\Asus\Downloads\Epigenetics_Beyond the Genetics and Medicine-Nova Science Publishers (2022).pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 2
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 952 0 976 1030
+		ShowToc = false
+		SidebarDx = 159
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\000readables\crop_production\2018_Pineapple-Botany, production and uses (2018, CABI Publishing).pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 952 0 976 1030
+		ShowToc = false
+		SidebarDx = 159
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\000readables\crop_production\2018_Vegetable Crop Science.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 952 0 976 1030
+		ShowToc = false
+		SidebarDx = 159
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\000readables\crop_production\2019-Banana Diseases.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 952 0 976 1030
+		ShowToc = false
+		SidebarDx = 159
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\000readables\crop_production\2020_Cotton-Botany, Production, and Crop Improvement.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 952 0 976 1030
+		ShowToc = false
+		SidebarDx = 159
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\Asus\Downloads\07-linkage_and_crossing_over.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 952 0 976 1030
+		ShowToc = false
+		SidebarDx = 159
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\Asus\Downloads\06-probability_and_statistical_testing.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 952 0 976 1030
+		ShowToc = false
+		SidebarDx = 159
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\Asus\Downloads\John Hubbard_ Barbara Burke Hubbard - Vector Calculus, Linear Algebra, and Differential Forms_ A Unified Approach-Matrix Editions (2015).pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 952 0 976 1030
+		ShowToc = false
+		SidebarDx = 159
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\Asus\Downloads\John H. Hubbard and Barbara Burke Hubbard - Student Solution Manual to accompany the 5th edition of Vector Calculus, Linear Algebra, and Differential Forms_ A Unified Approach.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 952 0 976 1030
+		ShowToc = false
+		SidebarDx = 159
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\Asus\Downloads\2015-Advances in Plant Breeding Strategies (Volume 1).pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 952 0 976 1030
+		ShowToc = true
+		SidebarDx = 194
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+]
+SessionData [
+]
+TimeOfLastUpdateCheck = 0 0
+OpenCountWeek = 640
+
+# Settings below are not recognized by the current version
