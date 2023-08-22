@@ -9,7 +9,7 @@ Just have the following executables:
 
 For a fairly simple epub with only minimal text, and so with it properly formatted, pandoc (version above 3.x does at least) does the conversion. Although, in many situations, the output file is not what you would want. Text and images are jumbled up/juxtaposed together, breaking up the alignment and spacings, thus making the output bland. However, one obvious benefit that comes with pandoc conversion is could be attributed to use of custom pdf-engine. You may tinker around it a little longer to find just the right engine to work your way. Note that 'pdflatex' is particularly bad at converting the modern xml based input (epub) to a polished pdf. I think "XeLaTeX" or "LuaLaTeX" might have an edge on that.
 
-For example, I took the following script right off a stackoverflow thread and it worked. Not in the best possible way, as I already mentioned, though.
+For example, I took the following script right off a stackoverflow thread and it worked. Not in the best possible way, as I already mentioned. Although, the information rich thread (https://askubuntu.com/questions/299747/converting-epub-files-to-pdf-format/954582#954582) is surely worth a read.
 
 ```
 pandoc -s -t latex --toc --top-level-division=chapter --pdf-engine=pdflatex "C:\Users\Asus\Downloads\some_crappy_book.epub" -o "more_crappy_looking_book.pdf"
