@@ -21,3 +21,16 @@ yet_to_convert <- non_mp3_files[!non_mp3_sans_ext %in% only_mp3_sans_ext]
 # convert remaining files
 ff_command <- paste0('ffmpeg -i "', yet_to_convert, '"  -vn -ar 48000 -ac 2 -b:a 192k "', tools::file_path_sans_ext(yet_to_convert), '_convert.mp3"')
 purrr::map(ff_command, ~system(.x))
+
+# to mux together streams (i.e. video and audio stream)
+
+file_list <- list.files("some_reference_directory", full.names = TRUE, pattern = ".webm$|.mp4$|.m4a")
+file_list_out <- stringr::str_replace_all(file_list, ".webm$|.mp4$|.m4a", ".mp3")
+
+io_stream_join_ffmpeg <- function(x, y){
+  paste0("ffmpeg -i ", "'", x, "'", " -vn -acodec libmp3lame -ac 2 -b:a 256k ", "'", y, "'")
+}
+
+all_streams <- io_stream_join_ffmpeg(file_list, file_list_out)
+
+purrr::map(all_streams, ~system(.x))
