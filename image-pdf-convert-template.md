@@ -20,6 +20,12 @@ file.rename(rownames(doc_file_infos_sorted), paste0(1:48, "_", rownames(doc_file
 
 (Note: To handle number-prefixed names consistently pad smaller numberic strings with zero at the beginning)
 
+## Use ghostscript (gs) compress large pdf files while sacrificing quality
+
+```
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dDownsampleColorImages=true -dColorImageResolution=92 -dNOPAUSE -dQUIET -dBATCH -sOutputFile=docs_compressed.pdf docs_large.pdf
+```
+
 ## Notes
 
 - Make sure to use double quotes (Single quotes do not work in windows!)
