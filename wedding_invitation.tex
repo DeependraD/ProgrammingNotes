@@ -1,0 +1,59 @@
+\documentclass{article}
+\usepackage{tikz}
+% \usepackage{fontspec}
+\usetikzlibrary{calc}
+
+% Set up page dimensions
+\usepackage[landscape, margin=1cm]{geometry}
+
+% % Define fancy font
+% \setmainfont{YourFancyFont.otf}
+
+\begin{document}
+\pagestyle{empty}
+
+% Create the ornamental frame
+\begin{tikzpicture}[remember picture, overlay]
+  \draw[line width=2pt]
+    ($(current page.north west) + (1cm,-1cm)$) rectangle
+    ($(current page.south east) + (-1cm,1cm)$);
+\end{tikzpicture}
+
+% Add text and decorations
+\begin{center}
+  {\Huge\bfseries\scshape The Wedding of\\[0.5cm] John Doe \& Jane Smith\\}
+  \vspace{1cm}
+  
+  {\Large Saturday, 27th May 2023\\}
+  \vspace{0.5cm}
+  
+  {\Large\itshape We've decided to make it official!\\}
+  \vspace{1cm}
+  
+  {\large Join us for a celebration filled with love, laughter,\\ and the most unforgettable moments of our lives.\\}
+  \vspace{0.5cm}
+  
+  {\large\bfseries Ceremony Venue:\\}
+  {\Large\itshape Beautiful Gardens\\}
+  {\large\scshape 1234 Blossom Lane, City\\}
+  \vspace{0.5cm}
+  
+  {\large\bfseries Reception Venue:\\}
+  {\Large\itshape Grand Ballroom\\}
+  {\large\scshape 5678 Romance Street, City\\}
+  \vspace{0.5cm}
+  
+  {\large\bfseries Dress Code:\\}
+  {\Large\itshape Formal attire\\}
+  \vspace{1cm}
+  
+  {\Large\itshape RSVP by 15th May 2023\\}
+  {\Large\scshape John: 555-1234, Jane: 555-5678\\}
+  \vspace{0.5cm}
+  
+  {\Large\bfseries We can't wait to celebrate with you!\\}
+  \vspace{1cm}
+  
+\end{center}
+
+\end{document}
